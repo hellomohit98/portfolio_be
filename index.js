@@ -1,0 +1,94 @@
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Hello World')
+})
+
+app.get('/api/courses', (req, res) => {
+    res.send([1,2,3]);
+})
+
+app.get('/api/courses/:id', (req, res) => {
+    res.send(req.params.id);
+})
+
+app.get('/api/portfolio', (req, res) => {
+    res.send({
+        generalInfo: {
+            name: 'MOHIT KUMAR',
+            designation: 'SOFTWARE ENGINEER',
+            mobileNumber: '7519350070',
+            email: 'hellomohit98@gmail.com',
+            location: 'Banglore, India',
+            photo: '',
+        },
+        skills: [
+            'javaScript', 'React', 'Redux', 'Html', 'css', 'nodeJs', 'Express'
+        ],
+        profileDescription: 'Energatic software engineer with 3+ years of rich experience in Full Stack end to end software development',
+        experience: [
+            {
+                companyName: `Mindnerve's`,
+                duration: {
+                    startTime: 'july 2022',
+                    endTime: 'current'
+                }
+            },
+            {
+                companyName: `CharanpahariApp`,
+                duration: {
+                    startTime: 'Jan 2021',
+                    endTime: 'June 2022'
+                }
+            },
+        ],
+        education: {
+            degreeType: 'BACHELOR IN COMPUTER APPLICATION',
+            collegeName: 'Magadh University',
+            duration: {
+                startData: '2017',
+                endData: '2020',
+            },
+            marks: '75%'
+        },
+        projects: [
+            {
+                projectName: 'Benevolve',
+                decription: 'Benevolve is a softwere as a service (Saas) based insurance management system which is use by insurance company to create and manage insurances.',
+                keyPoint: '. Worked as a key developer to initialize the project from the start. . Here we follow the agile methodology. . Handle the backend task to create and fix RestAPIs',
+                timeSpent: '16 months',
+                techUsed: [
+                    'react', 'Git', 'PM2', 'Node'
+                ],
+                url: null
+            },
+            {
+                projectName: 'medibuddy',
+                decription: 'Medibuddy is an application used by an organization and enterprise to manage its employees collaborations, feedback and appraisal.',
+                keyPoint: '. Worked as a key developer to initialize the project from the start. . Here we follow the agile methodology. . Handle the backend task to create and fix RestAPIs',
+                timeSpent: '4 months',
+                techUsed: [
+                    'react', 'Git', 'Node', 'Express', 'PM2'
+                ],
+                url: null
+            },
+            {
+                projectName: 'CharanpahariApp',
+                decription: 'Create reusable UI components and functionalities.',
+                keyPoint: `· Designing the Models. . Integrating the new Components. . Writing the scalable and maintainable code. . Build reusable component in React. . Good knowledge of e-commerce domain. . Experience in developing customer's facing UI components. . Build a dynamic website with Axios API (v2.2).`,
+                timeSpent: '18 months',
+                techUsed: [
+                    'react'
+                ],
+                url: 'https://apps.shopify.com/smart-combo-generator' 
+            }
+        ]
+    })
+})
+
+// PORT
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log(`Listening on port ${port}...`))
