@@ -59,35 +59,40 @@ app.get('/api/portfolio', (req, res) => {
         },
         projects: [
             {
-                projectName: 'Benevolve',
-                decription: 'Benevolve is a softwere as a service (Saas) based insurance management system which is use by insurance company to create and manage insurances.',
-                keyPoint: '. Worked as a key developer to initialize the project from the start. . Here we follow the agile methodology. . Handle the backend task to create and fix RestAPIs',
-                timeSpent: '16 months',
-                techUsed: [
-                    'react', 'Git', 'PM2', 'Node'
+                name: "Benevolve",
+                description: "Benevolve is a software as a service (SaaS) based insurance management system used by insurance companies to create and manage insurances.",
+                keyPoints: [
+                  "Worked as a key developer to initialize the project from the start.",
+                  "Followed agile methodology.",
+                  "Handled backend tasks to create and fix RestAPIs."
                 ],
-                url: null
-            },
-            {
-                projectName: 'medibuddy',
-                decription: 'Medibuddy is an application used by an organization and enterprise to manage its employees collaborations, feedback and appraisal.',
-                keyPoint: '. Worked as a key developer to initialize the project from the start. . Here we follow the agile methodology. . Handle the backend task to create and fix RestAPIs',
-                timeSpent: '4 months',
-                techUsed: [
-                    'react', 'Git', 'Node', 'Express', 'PM2'
+                timeSpent: "16 months"
+              },
+              {
+                name: "Medibuddy",
+                description: "Medibuddy is an application used by organizations and enterprises to manage its employees' collaborations, feedback, and appraisal.",
+                keyPoints: [
+                  "Worked as a key developer to initialize the project from the start.",
+                  "Followed agile methodology.",
+                  "Handled backend tasks to create and fix RestAPIs."
                 ],
-                url: null
-            },
-            {
-                projectName: 'CharanpahariApp',
-                decription: 'Create reusable UI components and functionalities.',
-                keyPoint: `· Designing the Models. . Integrating the new Components. . Writing the scalable and maintainable code. . Build reusable component in React. . Good knowledge of e-commerce domain. . Experience in developing customer's facing UI components. . Build a dynamic website with Axios API (v2.2).`,
-                timeSpent: '18 months',
-                techUsed: [
-                    'react'
+                timeSpent: "4 months"
+              },
+              {
+                name: "CharanpahariApp",
+                description: "Created reusable UI components and functionalities.",
+                keyPoints: [
+                  "Designed models.",
+                  "Integrated new components.",
+                  "Wrote scalable and maintainable code.",
+                  "Built reusable components in React.",
+                  "Gained good knowledge of the e-commerce domain.",
+                  "Experienced in developing customer-facing UI components.",
+                  "Built a dynamic website with Axios API (v2.2)."
                 ],
-                url: 'https://apps.shopify.com/smart-combo-generator' 
-            }
+                timeSpent: "18 months",
+                url: "https://apps.shopify.com/smart-combo-generator"
+              }
         ]
     })
 })
