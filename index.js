@@ -52,8 +52,8 @@ app.get('/api/portfolio', (req, res) => {
             degreeType: 'BACHELOR IN COMPUTER APPLICATION',
             collegeName: 'Magadh University',
             duration: {
-                startData: '2017',
-                endData: '2020',
+                startDate: '2017',
+                endDate: '2020',
             },
             marks: '75%'
         },
